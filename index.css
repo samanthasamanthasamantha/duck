@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#dd1d99, black, #0dc70d, #dd1d99, dodgerblue, #dd1d99);
+    animation: rotate 2s linear infinite;
+    transform: rotate(0deg) scale(5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg) scale(5);
+    }
+   
+    100%{
+        transform: rotate(360deg) scale(5);
+    }
+}
+
+
+form {
+    box-shadow: inset 2px 2px 20px 0px rgb(29 32 33 / 62%), 8px 7px 0px white;
+    position: absolute;
+    top: 43px;
+    right: 10%;
+    border-radius: 19px;
+    padding: 27px 34px 2px 34px;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-shadow: -2px 3px 2px black;
+    text-align: center;
+}
+
+.item {
+    margin: 13px 0;
+    position: relative;
+}
+
+.item i {
+    position: absolute;
+    left: 9px;
+    color: blue;
+    top: 10px;
+}
+
+.item1 input {
+    padding: 11px 0px 11px 29px;
+}
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="password"], input[type="date"] {
+    padding: 11px 0 11px 29px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="number"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%;
+}
+
+input[type=button] {
+    padding: 9px 20px;
+    box-shadow: 2px 6px 1px 0px black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.radio span {
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 4px 7px;
+    display: inline-block;
+}
+
+.sign {
+    text-align: center;
+}
+
+.already {
+    margin: 17px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff901;
+    font-weight: bold;
+}
+
+input[type="button"]:active{
+transform: translateY(5px);
+box-shadow: 2px 2px 1px 0px black;
+}
+
